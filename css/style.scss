@@ -1,55 +1,46 @@
 // Подключение шрифтов
 @font-face {
-	font-family: 'Lato';
-	src: url('../fonts/Lato-Regular.eot');
-	src: local('Lato Regular'), local('Lato-Regular'),
-			url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/Lato-Regular.woff') format('woff'),
-			url('../fonts/Lato-Regular.ttf') format('truetype');
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.eot");
+	src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Lato';
-	src: url('../fonts/Lato-Medium.eot');
-	src: local('Lato Medium'), local('Lato-Medium'),
-			url('../fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/Lato-Medium.woff') format('woff'),
-			url('../fonts/Lato-Medium.ttf') format('truetype');
+	font-family: "Lato";
+	src: url("../fonts/Lato-Medium.eot");
+	src: local("Lato Medium"), local("Lato-Medium"), url("../fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Lato';
-	src: url('../fonts/Lato-Semibold.eot');
-	src: local('Lato Semibold'), local('Lato-Semibold'),
-			url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/Lato-Semibold.woff') format('woff'),
-			url('../fonts/Lato-Semibold.ttf') format('truetype');
+	font-family: "Lato";
+	src: url("../fonts/Lato-Semibold.eot");
+	src: local("Lato Semibold"), local("Lato-Semibold"),
+		url("../fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.ttf") format("truetype");
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Georgia';
-	src: url('../fonts/Georgia.eot');
-	src: local('Georgia'),
-		url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Georgia.woff') format('woff'),
-		url('../fonts/Georgia.ttf') format('truetype');
+	font-family: "Georgia";
+	src: url("../fonts/Georgia.eot");
+	src: local("Georgia"), url("../fonts/Georgia.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Georgia';
-	src: url('../fonts/Georgia-Bold.eot');
-	src: local('Georgia Bold'), local('Georgia-Bold'),
-		url('../fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Georgia-Bold.woff') format('woff'),
-		url('../fonts/Georgia-Bold.ttf') format('truetype');
+	font-family: "Georgia";
+	src: url("../fonts/Georgia-Bold.eot");
+	src: local("Georgia Bold"), local("Georgia-Bold"), url("../fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -59,14 +50,14 @@
 
 // Основные цвета
 $black: #000;
-$green: #01996D;
+$green: #01996d;
 $grey: #424242;
 $white: #fff;
 
 // Основные CSS настройки страницы
 body {
-	// font-family: 'Georgia', serif;
-	font-family: 'Lato', sans-serif;
+	// font-family: "Georgia", serif;
+	font-family: "Lato", sans-serif;
 	background: $white;
 	color: $grey;
 	font-weight: 500;
@@ -98,14 +89,157 @@ body {
 	padding: 0px 10px;
 }
 
-
 // Стили страницы
+
+// title
+.big-title {
+	font-family: "Georgia", serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 1.13;
+	color: $green;
+}
+.title {
+	font-family: "Georgia", serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	color: $green;
+}
+.subtitle {
+	font-weight: 600;
+	font-size: 24px;
+	color: $grey;
+}
+
+// button
+.button {
+	background-color: $green;
+	border: 1px solid $green;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.25;
+	color: $white;
+	padding: 20px 50px;
+	max-width: 240px;
+}
+
 // header
 .header {
+	// min-height: 85px;
+	// position: absolute;
+	// top: 0;
+	// right: 0;
+	// left: 0;
 
+	// .header__container
+
+	&__container {
+	}
+
+	// .header__inner
+
+	&__inner {
+		padding: 17px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .header__modals
+
+	&__modals {
+		display: flex;
+		column-gap: 35px;
+		align-items: center;
+	}
+	
+	// .header__modals-btn
+	
+	&__modals-btn {
+		cursor: pointer;
+		padding: 13px 50px;
+		min-width: 183px;
+	}
+}
+.logo {
+}
+.nav {
+}
+.menu {
+	display: flex;
+	column-gap: 72px;
+
+	// .menu__item
+
+	&__item {
+	}
+	
+	// .menu__link
+	
+	&__link {
+		color: #292929;
+		line-height: 1.2;
+	}
+}
+.sign-in {
+	cursor: pointer;
+	font-family: "Lato", sans-serif;
+	background: transparent;
+	color: $black;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+// aware
+.aware {
+		background: url('../img/aware-bg.jpg') center / cover no-repeat;
+		min-height: calc(100vh - 87px);
+		// margin-top: 85px;
+	// .aware__container
+
+	&__container {
+	}
+
+	// .aware__inner
+
+	&__inner {
+
+	}
+
+	// .aware__content
+
+	&__content {
+		max-width: 440px;
+		padding: 175px 0 10px;
+	}
+	
+	// .aware__title
+	
+	&__title {
+		margin-bottom: 30px;
+	}
+	
+	// .aware__text
+	
+	&__text {
+		max-width: 420px;
+		font-weight: 400;
+		line-height: 1.55;
+		color: #484848;
+		margin-bottom: 18px;
+	}
+
+	// .aware__link
+
+	&__link {
+		display: block;
+	}
 }
 
 // footer
 .footer {
-
 }

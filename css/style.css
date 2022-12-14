@@ -125,3 +125,112 @@ body {
   margin: 0 auto;
   padding: 0px 10px;
 }
+
+.big-title {
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.13;
+  color: #01996d;
+}
+
+.title {
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: #01996d;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  color: #424242;
+}
+
+.button {
+  background-color: #01996d;
+  border: 1px solid #01996d;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #fff;
+  padding: 20px 50px;
+  max-width: 240px;
+}
+
+.header__inner {
+  padding: 17px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__modals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 35px;
+     -moz-column-gap: 35px;
+          column-gap: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__modals-btn {
+  cursor: pointer;
+  padding: 13px 50px;
+  min-width: 183px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 72px;
+     -moz-column-gap: 72px;
+          column-gap: 72px;
+}
+.menu__link {
+  color: #292929;
+  line-height: 1.2;
+}
+
+.sign-in {
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  background: transparent;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.aware {
+  background: url("../img/aware-bg.jpg") center/cover no-repeat;
+  min-height: calc(100vh - 87px);
+}
+.aware__content {
+  max-width: 440px;
+  padding: 175px 0 10px;
+}
+.aware__title {
+  margin-bottom: 30px;
+}
+.aware__text {
+  max-width: 420px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #484848;
+  margin-bottom: 18px;
+}
+.aware__link {
+  display: block;
+}
