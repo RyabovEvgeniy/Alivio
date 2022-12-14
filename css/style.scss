@@ -1,0 +1,111 @@
+// Подключение шрифтов
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.eot');
+	src: local('Lato Regular'), local('Lato-Regular'),
+			url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Lato-Regular.woff') format('woff'),
+			url('../fonts/Lato-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Medium.eot');
+	src: local('Lato Medium'), local('Lato-Medium'),
+			url('../fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Lato-Medium.woff') format('woff'),
+			url('../fonts/Lato-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Semibold.eot');
+	src: local('Lato Semibold'), local('Lato-Semibold'),
+			url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Lato-Semibold.woff') format('woff'),
+			url('../fonts/Lato-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/Georgia.eot');
+	src: local('Georgia'),
+		url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Georgia.woff') format('woff'),
+		url('../fonts/Georgia.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('../fonts/Georgia-Bold.eot');
+	src: local('Georgia Bold'), local('Georgia-Bold'),
+		url('../fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Georgia-Bold.woff') format('woff'),
+		url('../fonts/Georgia-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+// Файл обнуляющих стилей
+@import "_null";
+
+// Основные цвета
+$black: #000;
+$green: #01996D;
+$grey: #424242;
+$white: #fff;
+
+// Основные CSS настройки страницы
+body {
+	// font-family: 'Georgia', serif;
+	font-family: 'Lato', sans-serif;
+	background: $white;
+	color: $grey;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	flex: 1 1 auto;
+}
+.none {
+	display: none !important;
+}
+
+[class*="__container"] {
+	max-width: 1390px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+[class*="__container-big"] {
+	max-width: 1510px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+
+// Стили страницы
+// header
+.header {
+
+}
+
+// footer
+.footer {
+
+}
