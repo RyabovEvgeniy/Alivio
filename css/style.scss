@@ -91,7 +91,7 @@ body {
 
 // Стили страницы
 
-// title
+// big-title
 .big-title {
 	font-family: "Georgia", serif;
 	font-style: normal;
@@ -100,6 +100,8 @@ body {
 	line-height: 1.13;
 	color: $green;
 }
+
+// title
 .title {
 	font-family: "Georgia", serif;
 	font-style: normal;
@@ -107,17 +109,13 @@ body {
 	font-size: 50px;
 	color: $green;
 }
+
+// subtitle
 .subtitle {
 	font-weight: 600;
 	font-size: 24px;
 	color: $green;
 }
-
-// .span {
-// 	color: $grey;
-// 	font-weight: 600;
-// 	font-size: 24px;
-// }
 
 // button
 .button {
@@ -134,12 +132,6 @@ body {
 
 // header
 .header {
-	// min-height: 85px;
-	// position: absolute;
-	// top: 0;
-	// right: 0;
-	// left: 0;
-
 	// .header__container
 
 	&__container {
@@ -247,7 +239,7 @@ body {
 
 // works
 .works {
-padding: 170px 0 255px;
+	padding: 170px 0 255px;
 
 	// .works__container
 
@@ -264,7 +256,7 @@ padding: 170px 0 255px;
 	&__top {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;	
+		align-items: center;
 	}
 
 	// .works__top-title
@@ -305,13 +297,13 @@ padding: 170px 0 255px;
 		font-weight: 400;
 		font-size: 150px;
 		color: rgba(1, 153, 109, 0.2);
-		transform: translate(20px,93px);
+		transform: translate(20px, 93px);
 	}
 
 	// .works__step-num_left
 
 	&__step-num_left {
-		transform: translate(-3px,93px);
+		transform: translate(-3px, 93px);
 	}
 
 	// .works__step-title
@@ -342,6 +334,80 @@ padding: 170px 0 255px;
 	&__step-img {
 		display: block;
 	}
+}
+
+// about
+.about {
+	background-color: #245852;
+	color: $white;
+	padding: 230px 0 177px;
+
+	// .about__container-big
+
+	&__container-big {
+	}
+
+	// .about__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .about__content
+
+	&__content {
+		flex-basis: 580px;
+	}
+
+	// .about__title
+
+	&__title {
+		color: $white;
+		margin-bottom: 33px;
+	}
+
+	// .about__text
+
+	&__text {
+		font-weight: 600;
+		font-size: 25px;
+		margin-bottom: 57px;
+	}
+
+	// .about__link
+
+	&__link {
+	}
+
+	// .about__video
+
+	&__video {
+		flex-basis: 896px;
+		border-radius: 17px;
+		background: url("../img/video-bg.jpg") center / cover no-repeat;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 516px;
+	}
+
+	// .about__video-link
+
+	&__video-link {
+		path {
+			transition: fill 0.5s;
+		}
+		&:hover svg path {
+			fill: #f00;
+		}
+	}
+}
+
+.title {
+}
+.button {
 }
 
 // footer

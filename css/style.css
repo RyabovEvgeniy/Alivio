@@ -315,3 +315,57 @@ body {
 .works__step-img {
   display: block;
 }
+
+.about {
+  background-color: #245852;
+  color: #fff;
+  padding: 230px 0 177px;
+}
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__content {
+  -ms-flex-preferred-size: 580px;
+      flex-basis: 580px;
+}
+.about__title {
+  color: #fff;
+  margin-bottom: 33px;
+}
+.about__text {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 57px;
+}
+.about__video {
+  -ms-flex-preferred-size: 896px;
+      flex-basis: 896px;
+  border-radius: 17px;
+  background: url("../img/video-bg.jpg") center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 516px;
+}
+.about__video-link path {
+  -webkit-transition: fill 0.5s;
+  -o-transition: fill 0.5s;
+  transition: fill 0.5s;
+}
+.about__video-link:hover svg path {
+  fill: #f00;
+}
