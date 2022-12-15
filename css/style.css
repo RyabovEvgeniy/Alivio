@@ -146,7 +146,7 @@ body {
 .subtitle {
   font-weight: 600;
   font-size: 24px;
-  color: #424242;
+  color: #01996d;
 }
 
 .button {
@@ -232,5 +232,86 @@ body {
   margin-bottom: 18px;
 }
 .aware__link {
+  display: block;
+}
+
+.works {
+  padding: 170px 0 255px;
+}
+.works__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.works__top-title {
+  -ms-flex-preferred-size: 584px;
+      flex-basis: 584px;
+}
+.works__top-text {
+  -ms-flex-preferred-size: 671px;
+      flex-basis: 671px;
+}
+.works__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.works__step-item {
+  -ms-flex-preferred-size: 390px;
+      flex-basis: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.works__step-item:nth-child(2) {
+  -webkit-transform: translateY(24%);
+      -ms-transform: translateY(24%);
+          transform: translateY(24%);
+}
+.works__step-num {
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  font-size: 150px;
+  color: rgba(1, 153, 109, 0.2);
+  -webkit-transform: translate(20px, 93px);
+      -ms-transform: translate(20px, 93px);
+          transform: translate(20px, 93px);
+}
+.works__step-num_left {
+  -webkit-transform: translate(-3px, 93px);
+      -ms-transform: translate(-3px, 93px);
+          transform: translate(-3px, 93px);
+}
+.works__step-title {
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 55px;
+}
+.works__step-title_right {
+  text-align: right;
+}
+.works__step-text {
+  margin-bottom: 60px;
+}
+.works__step-img {
   display: block;
 }

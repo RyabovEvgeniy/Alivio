@@ -110,8 +110,14 @@ body {
 .subtitle {
 	font-weight: 600;
 	font-size: 24px;
-	color: $grey;
+	color: $green;
 }
+
+// .span {
+// 	color: $grey;
+// 	font-weight: 600;
+// 	font-size: 24px;
+// }
 
 // button
 .button {
@@ -155,9 +161,9 @@ body {
 		column-gap: 35px;
 		align-items: center;
 	}
-	
+
 	// .header__modals-btn
-	
+
 	&__modals-btn {
 		cursor: pointer;
 		padding: 13px 50px;
@@ -176,9 +182,9 @@ body {
 
 	&__item {
 	}
-	
+
 	// .menu__link
-	
+
 	&__link {
 		color: #292929;
 		line-height: 1.2;
@@ -196,9 +202,9 @@ body {
 
 // aware
 .aware {
-		background: url('../img/aware-bg.jpg') center / cover no-repeat;
-		min-height: calc(100vh - 87px);
-		// margin-top: 85px;
+	background: url("../img/aware-bg.jpg") center / cover no-repeat;
+	min-height: calc(100vh - 87px);
+
 	// .aware__container
 
 	&__container {
@@ -207,7 +213,6 @@ body {
 	// .aware__inner
 
 	&__inner {
-
 	}
 
 	// .aware__content
@@ -216,15 +221,15 @@ body {
 		max-width: 440px;
 		padding: 175px 0 10px;
 	}
-	
+
 	// .aware__title
-	
+
 	&__title {
 		margin-bottom: 30px;
 	}
-	
+
 	// .aware__text
-	
+
 	&__text {
 		max-width: 420px;
 		font-weight: 400;
@@ -236,6 +241,105 @@ body {
 	// .aware__link
 
 	&__link {
+		display: block;
+	}
+}
+
+// works
+.works {
+padding: 170px 0 255px;
+
+	// .works__container
+
+	&__container {
+	}
+
+	// .works__subtitle
+
+	&__subtitle {
+	}
+
+	// .works__top
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;	
+	}
+
+	// .works__top-title
+
+	&__top-title {
+		flex-basis: 584px;
+	}
+
+	// .works__top-text
+
+	&__top-text {
+		flex-basis: 671px;
+	}
+
+	// .works__step
+
+	&__step {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .works__step-item
+
+	&__step-item {
+		flex-basis: 390px;
+		display: flex;
+		flex-direction: column;
+		&:nth-child(2) {
+			transform: translateY(24%);
+		}
+	}
+
+	// .works__step-num
+
+	&__step-num {
+		font-family: "Georgia", serif;
+		font-weight: 400;
+		font-size: 150px;
+		color: rgba(1, 153, 109, 0.2);
+		transform: translate(20px,93px);
+	}
+
+	// .works__step-num_left
+
+	&__step-num_left {
+		transform: translate(-3px,93px);
+	}
+
+	// .works__step-title
+
+	&__step-title {
+		font-family: "Georgia", serif;
+		font-weight: 700;
+		font-size: 30px;
+		text-align: center;
+		color: $black;
+		margin-bottom: 55px;
+	}
+
+	// .works__step-title_right
+
+	&__step-title_right {
+		text-align: right;
+	}
+
+	// .works__step-text
+
+	&__step-text {
+		margin-bottom: 60px;
+	}
+
+	// .works__step-img
+
+	&__step-img {
 		display: block;
 	}
 }
