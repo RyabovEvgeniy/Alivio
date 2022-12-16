@@ -531,4 +531,47 @@ body {
 
 // footer
 .footer {
+	background-color: #245852;
+	padding: 95px 0 145px;
+	color: $white;
+
+	// .footer__container
+
+	&__container {
+	}
+
+	// .footer__title
+
+	&__title {
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 1.3;
+		margin-bottom: 60px;
+	}
+
+	// .footer__nav
+
+	&__nav {
+	}
+
+	// .footer__menu
+
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		row-gap: 60px;
+	}
+
+	// .footer__menu-item
+
+	&__menu-item {
+	}
+
+	// .footer__menu-link
+
+	&__menu-link {
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 1.2;
+	}
 }
